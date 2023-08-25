@@ -25,6 +25,21 @@
       <a class="navbar-brand" href="#"
         ><img src={% static 'images/logo.jpg' %} alt="logo image" />InterestSave</a>
 
+      {% comment %} <div class="navbar-nav d-lg-none ml-auto">
+        <a href={% url "sign-up" %}>
+            <button class="btn button" type="button">Join Us</button>
+  
+        </a>
+        
+      </div> {% endcomment %}
+
+      {% if not request.user.is_authenticated %}
+       <div class="navbar-nav d-lg-none ml-auto">
+        <a href={% url "sign-in" %}
+          ><button class="btn button" type="button">Log In</button>
+        </a>
+      </div> 
+      
       <div class="navbar-nav d-lg-none ml-auto">
         <a href={% url "sign-up" %}>
             <button class="btn button" type="button">Join Us</button>
@@ -32,6 +47,34 @@
         </a>
         
       </div>
+
+      {% elif request.user.is_authenticated %}
+
+      <div class="navbar-nav d-lg-none ml-auto">
+        <a href={% url "dashboard" %}
+          ><button type="button" class="btn button">
+            dashboard
+          </button>
+        </a>
+      </div>
+
+
+      {% endif %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <button
         class="navbar-toggler ml-auto"
