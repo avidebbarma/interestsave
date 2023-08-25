@@ -39,7 +39,7 @@ def log_in(request):
     if request.method=="POST":
         
         try:         
-            username=request.POST.get("username")
+            username=request.POST.get("username").lower()
             password=request.POST.get("password")
 
             user=User.objects.get(username=username)
