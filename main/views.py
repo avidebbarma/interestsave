@@ -29,7 +29,7 @@ def sign_up(request):
         "form":form,
 
     }
-    return render(request, "signup.html", context)
+    return render(request, "sign_up.html", context)
 
 
 
