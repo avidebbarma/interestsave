@@ -28,10 +28,10 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href={%url "index" %}>Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html">About us</a>
+          <a class="nav-link" href="">About us</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle ml-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -40,7 +40,7 @@
           </a>
           <!-- Add the dropdown menu content -->
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="calculator.html">EMI Calculator</a>
+            <a class="dropdown-item" href="">EMI Calculator</a>
             <a class="dropdown-item" href="#">Savings Calculator</a>
             <a class="dropdown-item" href="#"></a>
             <div class="dropdown-divider"></div>
@@ -50,7 +50,7 @@
       </ul>
     </div>
     <div class="navbar-nav ml-auto d-none d-lg-block">
-<a href="login.html"><button class="btn button btn-md mx-2" type="button">Log in</button>
+<a href={% url "sign-in" %}><button class="btn button btn-md mx-2" type="button">Log in</button>
 </a>
     </div>
   </nav>
@@ -114,7 +114,7 @@
               {% comment %} <input type="password" class="form-control input" id="password" placeholder="" required> {% endcomment %}
             </div>
              <div class="mb-3 terms">
-              By creating an account, you confirm that you agree to our <a href="terms.html">Terms of Use</a> and <a href="privacy.html">Privacy Policy</a>
+              By creating an account, you confirm that you agree to our <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>
              </div>
             <input type="submit" class="btn next button" value="Lets Go">
           </div>

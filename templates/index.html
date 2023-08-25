@@ -77,7 +77,7 @@
             </a>
             <!-- Add the dropdown menu content -->
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="calculator.html">EMI Calculator</a>
+              <a class="dropdown-item" href="">EMI Calculator</a>
               <a class="dropdown-item" href="#">Savings Calculator</a>
               <a class="dropdown-item" href="#">Earn With Us</a>
               <div class="dropdown-divider"></div>
@@ -88,7 +88,7 @@
       </div>
       {% if not request.user.is_authenticated %}
       <div class="navbar-nav ml-auto d-none d-lg-block">
-        <a href={% url "sign-in"   %}
+        <a href={% url "sign-in" %}
           ><button class="btn button btn-md mx-2" type="button">Log In</button>
         </a>
       </div>
@@ -573,7 +573,7 @@
                   id="exampleInputPassword1"
                 />
               </div>
-              <a href="dashboard.html">
+              <a href={% url "dashboard" %}"">
                 <button type="button" class="btn button">Log In</button>
               </a>
 
