@@ -1,0 +1,291 @@
+/* Global Styles */
+body {
+  font-family: "roboto flex", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin:0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Header */
+  header {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .list {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+  }
+
+  .list:before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: green; 
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position:fixed;
+    z-index: 9999;
+    top: 0;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .navbar-brand img {
+    max-height: 40px;
+  }
+  
+  /* Sections */
+  section {
+    padding: 25px 0;
+  }
+  
+  .bg-light {
+    background-color: #f8f8f8;
+  }
+  
+  
+  /* Stats */
+  .stats-item {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #E3F4F4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  .stats-item h3 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #22A699;
+  }
+  
+  .stats-item img {
+    height:40px;
+    width:40px;
+  }
+  
+  /* Additional Value */
+  .additional-value-item h3 {
+    margin-top: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Color Theme */
+  body {
+    color: rgb(63, 51, 86);
+  }
+  
+  h2 {
+    color: #069c8d;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+  
+  h3 {
+    color: #555555;
+  }
+  
+  .benefits-item {
+    margin-bottom: 40px;
+  }
+
+  #benefits  h2 {
+    margin-top: 20px;
+    color:#22A699
+  }
+
+  #benefits h4 {
+    color:#22A699;
+  }
+  
+  .additional-value-item {
+    margin-bottom: 40px;
+  }
+
+  p{
+    font-family: 'Roboto Flex',sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+    ;
+    font-size: 16px;
+  }
+
+  .button {
+    background-color: #22A699;
+    color: white;
+  }
+
+  #claim {
+    margin-bottom: none;
+    padding-bottom: none;
+  }
+
+  .claim {
+    margin-top: 40px;
+  }
+
+  .biddingimg {
+    height: 500px;
+    width: 700px;
+  } 
+
+  .workh3 {
+    color: #22A699;
+  }
+
+  .workp{
+    font-size: 16px;
+  }
+
+  /* carousel chatgpt */
+  .carousel-item img {
+    max-height: 300px;
+    object-fit: contain;
+  }
+
+  .benefits {
+    background-color: #E3F4F4;
+  }
+
+  .benefits-item {
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+
+  #benefits img{
+height:50px;
+margin-top: 10px;
+  }
+
+   #save h4{
+    text-align: left;
+    color: #22A699;
+  }
+
+  #save img {
+    border-radius: 40px;
+  }
+
+  #save p {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  #why p{
+    font-size: 16px;
+  }
+
+  #why h2 {
+    color:#656060;
+    font-size: 40px;
+  }
+
+  .number {
+    font-size: 50px;
+    color:#c5ece8;
+  }
+
+  #why h4{
+    color:#22A699
+  }
+
+
+  /* signup page css */
+
+  
+
+  .form-group label {
+    font-weight: bold;
+  }
+
+  .about {
+    margin-top:18px;
+  }
+  
+  .text {
+font-size: 11px;
+text-align: left;
+  }
+
+
+  .form-row {
+    justify-content: center;
+  }
+
+  .round {
+    border-radius: 20px;
+  }
+
+  #footer {
+    background-color: #c0ece7;
+  }
+
+  #footer footer {
+    background-color: #c0ece7;
+  }
+
+  #footer a {
+    text-decoration-color: #656060;
+    color: black;
+  }
+
+  #footer h5 {
+    color:#22A699;
+  }
+
+  .dropdown-item {
+    color:#656060;
+  }
+
+  #signin .box {
+    border-radius: 30px;
+  }
+
+  .input, textarea {
+    background-color: #f3f3f4;
+    height: 50px;
+  }
+
+  .input {
+    margin-bottom: 10px;
+  }
+  
+
+ 
+  
+
+ 

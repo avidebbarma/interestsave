@@ -1,0 +1,66 @@
+body, html {
+    height: 100%;
+  }
+  
+  .container-fluid {
+    height: 100%;
+  }
+  
+  .row {
+    height: 100%;
+  }
+  
+  /* Style for the left container */
+  .bg-light {
+    background-color: #f0f0f0;
+  }
+  
+  /* Add some margin and padding to the left container content */
+  .bg-light > div {
+    margin: auto;
+    max-width: 400px;
+  }
+  
+  /* Center the left container content vertically */
+  .bg-light > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Add a border-radius to the right container */
+  .card {
+    border-radius: 10px;
+  }
+  
+  /* Style the image inside the left container */
+  .img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .img{
+width: 600px;
+  }
+
+  .button {
+    background-color: #22A699;
+    color: white;
+  }
+
+  .input, textarea {
+    background-color: #f3f3f4;
+    height: 50px;
+  }
+
+  .input {
+    margin-bottom: 30px;
+  }
+  
+
+
+
+  
+
+  

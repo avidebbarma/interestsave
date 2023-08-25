@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multipage Form with Image</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href={% static "css/registration.css" static %}>
+  
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href={%url "index" %}>InterestSave</a>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <div class="container mt-2">
+    <div class="row body">
+      <!-- Left Section with Image -->
+      <div class="col-lg-5 left-section">
+        <img src={% static "images/groupstudents.png"  %} alt="Image">
+        <h2 class="mt-4">What we Do</h2>
+        <p class="side">A small attempt to get cheaper student loans ended up saving each participant an average of $13K+. Since then we’ve become the #1 choice for MBA students to get their student loans. <br><br>
+
+          With 25% to 50% of the Class of 2024 participating at each of the top 25 MBA Programs, we’ve helped MBA students with over $700M of student loans.</p>
+      </div>
+
+
+      <!-- Form -->
+      <div class="col-lg-7 mb-4 form">
+        <div class="form-container">
+          <form id="multipage-form" method="POST">
+          {% csrf_token %}
+            <!-- Step 1 -->
+            <div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                {{form.email}}
+              </div>
+              <div class="mb-3">
+                <label for="number" class="form-label">Phone No</label>
+                {{form.phone_no}}
+              </div>
+              <div class="mb-3">
+                <label for="state" class="my-4 fs-5">State:</label>
+                {{form.state}}
+              </div>
+              <div class="mb-3">
+                <label for="city" class="form-label">City</label>
+                {{form.city}}
+              </div>
+              <div class="mb-3">
+                <label class="form-label">You are currently?</label>
+                {{form.currently_working}}
+              </div>
+
+              <div class="form-buttons">
+                <button type="submit" class="btn button">Next</button>
+              </div>
+            </div>        
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+   
+
+
+
+
+
+
+
+  <!-- Bootstrap JS and jQuery (required for Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+{% comment %} <script src={% static "js/registration.js"   %}></script> {% endcomment %}
+
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+web: gunicorn interestsave.wsgi --log-file -

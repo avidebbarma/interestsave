@@ -1,0 +1,132 @@
+body {
+    font-family: 'Montserrat', sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  section {
+    padding: 25px 0;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Header */
+  header {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+  }
+
+  .navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    color:white;
+    background-color: #22A699;
+
+
+  }
+
+  .navbar-brand img {
+    max-height: 40px;
+  }
+
+  .sidebar {
+    color:black;
+  }
+  
+  .card-img {
+    max-height: 250px;
+    max-width: 250px;
+    margin-left: 10px;
+}
+
+.card-deck {
+    justify-content: center;
+    margin-top: 20px;
+    width:600px;
+  }
+
+.redirect{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width:100%;
+    border-radius: 6%;
+}
+.redirect:hover {
+    box-shadow: 5px 10px 20px #888888;
+    
+}
+
+.card-title {
+    padding-left: 40px;
+}
+
+a.nav-link {
+    color: #2B2730;
+}
+
+.card-title a {
+    color: black;
+  }
+
+  #referral {
+    margin-top: 40px;
+  }
+
+  .main-content {
+    padding-top: 40px;
+    margin:0;
+    padding:0;
+}
+
+  h2 {
+    color: #22A699;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+
+  h5{
+    color:#22A699;
+    font-size: 17px;
+  }
+
+  .referral {
+    border-radius: 10%;
+    border-color: #22A699;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin:0;
+    padding:0;
+
+  }
+
+  .ref-img {
+    width:50px;
+    height:50px;
+  }
+
+  .button {
+    background-color: #22A699;
+    color: white;
+  }
+
+  .calculator {
+    margin-top: 40px;
+  }
+
+  #footer {
+    background-color: #c0ece7;
+  }
+
+  h4{
+font-size: 20px;
+  }
+
+  p{
+    font-size: 15px;
+  }
