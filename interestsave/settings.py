@@ -39,9 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -134,3 +136,8 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR,"media/user_upload")
 
 MEDIA_URL = '/media/'
+
+
+CSRF_TRUSTED_ORIGINS = ['https://web-production-0017.up.railway.app/']
+
+CSRF_TRUSTED_ORIGINS = ['https://*.web-production-0017.up.railway.app/']
